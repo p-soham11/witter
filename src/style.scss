@@ -1,0 +1,182 @@
+/** @format */
+
+// Dealing with the CSS of the Login and Registration Forms
+.formContainer {
+    height: 100vh; // vh stands for Viewport Height
+    background-color: rgb(233, 201, 163);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+        display: block;
+        margin-top: -8rem;
+        margin-bottom: 1.8rem;
+        font-size: 2.9rem;
+        color: #083836;
+    }
+
+    .formWrapper {
+        background-color: #f3e9d2;
+        padding: 20px 60px;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+
+        .regTitle {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: rgb(119, 99, 74);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            min-width: 308px;
+
+            input {
+                padding: 0.75rem;
+                border-radius: 15px;
+                border: 0;
+                background-color: #f3f0ea;
+                &::placeholder {
+                    color: rgba(119, 99, 74, 0.878);
+                }
+                &::-webkit-file-upload-button {
+                    border: none;
+                    background-color: rgb(214, 191, 162);
+                    border-radius: 8px;
+                    padding: 0.05rem 0.75rem;
+                    font-family: "Poppins", sans-serif;
+                    color: #f3f0ea;
+                    cursor: pointer;
+                }
+            }
+            input:focus {
+                outline: none;
+            }
+
+            button {
+                background-color: #083836;
+                color: #f3e9d2;
+                border: none;
+                padding: 0.5rem;
+                border-radius: 15px;
+                font-size: 1.25rem;
+                font-weight: 600;
+                margin-bottom: 0.8rem;
+                cursor: pointer;
+            }
+        }
+        p {
+            color: #5a5038;
+            font-size: smaller;
+
+            strong {
+                cursor: pointer;
+                color: rgb(119, 99, 74);
+            }
+        }
+    }
+}
+
+.home {
+    background-color: rgb(233, 201, 163);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        display: flex;
+        border: 1px solid black;
+        border-radius: 25px;
+        width: 70%;
+        height: 80%;
+        overflow: hidden;
+
+        .sidebar {
+            flex: 2;
+            border-right: 1px solid black;
+
+            .navbar {
+                display: flex;
+                align-items: center;
+                background-color: #8a794f;
+                height: 3.1rem;
+                padding: 1rem;
+                justify-content: space-between;
+                color: #f3e9d2;
+
+                .user {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .userPreview {
+                        display: flex;
+                        gap: 12px;
+                        img {
+                            background-color: aquamarine;
+                            height: 3rem;
+                            width: 3rem;
+                            border-radius: 50%;
+                            object-fit: cover;
+                            margin: auto;
+                        }
+                        span {
+                            margin: auto;
+                            align-items: center;
+                        }
+                    }
+
+                    button {
+                        background-color: #083836;
+                        color: #f3e9d2;
+                        border: none;
+                        padding-top: 0.5rem;
+                        padding-bottom: 0.5rem;
+                        padding-left: 1.2rem;
+                        padding-right: 1.2rem;
+                        border-radius: 15px;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .chats {
+                .userChat {
+                    padding: 10px;
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 10px;
+                    img {
+                        background-color: aquamarine;
+                        height: 2.8rem;
+                        width: 2.8rem;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        .chatWindow {
+            flex: 5;
+
+            .chatInfo {
+                height: 3.87rem;
+                background-color: #2b4746;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+            }
+        }
+    }
+}
