@@ -8,8 +8,8 @@ import "./style.scss";
 function App() {
     return (
         // <Login />
-        <Register />
-        // <Home />
+        // <Register />
+        <Home />
     );
 }
 export default App;

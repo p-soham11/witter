@@ -2,7 +2,7 @@
 
 // Dealing with the CSS of the Login and Registration Forms
 .formContainer {
-    height: 100vh; // vh stands for Viewport Height
+    min-height: 100vh; // vh stands for Viewport Height
     background-color: rgb(233, 201, 163);
     display: flex;
     flex-direction: column;
@@ -146,6 +146,17 @@
                         font-weight: 600;
                         cursor: pointer;
                     }
+                }
+            }
+
+            .search {
+                background-color: rgb(233, 201, 163);
+                padding-left: 1rem;
+                padding-right: 1rem;
+                input {
+                    border: 0;
+                    background-color: rgb(233, 201, 163);
+                    width: 100%;
                 }
             }
 
