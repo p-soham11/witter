@@ -90,6 +90,25 @@
     align-items: center;
     justify-content: center;
 
+    .logout {
+        #logoutBtn {
+            background-color: #083836;
+            color: #f3e9d2;
+            border: none;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 1.2rem;
+            padding-right: 1.2rem;
+            border-radius: 15px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            position: fixed;
+            top: 1.5rem;
+            right: 1.5rem;
+        }
+    }
+
     .container {
         display: flex;
         border: 1px solid black;
@@ -131,20 +150,6 @@
                             margin: auto;
                             align-items: center;
                         }
-                    }
-
-                    button {
-                        background-color: #083836;
-                        color: #f3e9d2;
-                        border: none;
-                        padding-top: 0.5rem;
-                        padding-bottom: 0.5rem;
-                        padding-left: 1.2rem;
-                        padding-right: 1.2rem;
-                        border-radius: 15px;
-                        font-size: 1rem;
-                        font-weight: 600;
-                        cursor: pointer;
                     }
                 }
             }
