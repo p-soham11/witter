@@ -1,16 +1,27 @@
 /** @format */
 
 import React from "react";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import PersonAddAlt1Icon from "@mui/icons-material/PersonAddAlt1";
+import GroupAddIcon from "@mui/icons-material/GroupAdd";
+import { IconButton } from "@mui/material";
 
 const Navbar = () => {
     return (
         <div className="navbar">
             <div className="user">
                 <div className="userPreview">
-                    <img
-                        src="https://images.unsplash.com/photo-1553484771-898ed465e931?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNlbyUyMG9mJTIwYSUyMGNvbXBhbnl8ZW58MHx8MHx8fDA%3D"
-                        alt="Display Picture"
-                    />
+                    <IconButton>
+                        <AccountCircleIcon />
+                    </IconButton>
+                </div>
+                <div>
+                    <IconButton>
+                        <PersonAddAlt1Icon />
+                    </IconButton>
+                    <IconButton>
+                        <GroupAddIcon />
+                    </IconButton>
                 </div>
             </div>
         </div>
